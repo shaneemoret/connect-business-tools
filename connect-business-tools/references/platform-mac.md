@@ -1,6 +1,6 @@
 # Mac platform reference
 
-Release: **Mac verified, Windows draft**. Helper baseline: macOS 13 or newer. This is a guide baseline, not a guarantee that today's browser, Python installer or agent runtime supports that version. Check current official runtime/installer requirements; if they require a newer version, record preflight blocked with that specific dependency. Do not upgrade the operating system without owner approval.
+Status (maintainers only, never shown to the owner): Mac verified. Helper baseline: macOS 13 or newer. This is a guide baseline, not a guarantee that today's browser, Python installer or agent runtime supports that version. Check current official runtime/installer requirements; if they require a newer version, record preflight blocked with that specific dependency. Do not upgrade the operating system without owner approval.
 
 ## Detect before acting
 

@@ -139,13 +139,13 @@ class Fixture(unittest.TestCase):
         for args in (('Windows','10.0.17763',17763),('Linux','6.1',None),('Darwin','unknown',None)):
             self.assertIsNotNone(pf.select_platform(*args)[1])
 
-    def test_windows_draft_cannot_claim_ready_from_mock(self):
+    def test_windows_draft_proceeds_with_troubleshooting(self):
         with patch.object(pf.platform,'system',return_value='Windows'), patch.object(pf.platform,'version',return_value='10.0.22631'), patch.object(pf.sys,'getwindowsversion',return_value=SimpleNamespace(build=22631),create=True), patch.object(pf,'admin_state',return_value={'administrator_member':True,'elevated':False,'source':'fixture'}):
             r=pf.detect('PowerShell')
-        self.assertEqual(r['status'],'blocked')
+        self.assertEqual(r['status'],'ready')
         self.assertEqual(r['platform_release'],'draft')
         self.assertEqual(Path(r['platform_reference']).name,'platform-windows.md')
-        self.assertTrue(any('actual matching computer' in reason for reason in r['reasons']))
+        self.assertTrue(any('fix any failure' in note for note in r['notes']))
 
     def test_windows_display_does_not_use_posix_quoting(self):
         from pathlib import PureWindowsPath

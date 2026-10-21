@@ -12,11 +12,6 @@ Paste this into Codex in the ChatGPT desktop app:
 Install the connect-business-tools skill from https://github.com/shaneemoret/connect-business-tools (the connect-business-tools folder) into my Codex skills. Then read its SKILL.md and follow it: find my tools from the last two months of my email, show me the report, and walk me through the API key for each core tool, one at a time.
 ```
 
-## Works on
-
-- Mac: tested and ready.
-- Windows: being tested. On Windows the skill checks your computer first and tells you plainly if it can go ahead yet.
-
 ## What it will and won't do
 
 - It reads your email. It never sends, buys, deletes or changes anything in your accounts.

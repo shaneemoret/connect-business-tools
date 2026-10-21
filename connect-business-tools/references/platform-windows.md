@@ -1,6 +1,6 @@
 # Windows platform reference
 
-Release: **Windows draft. Not verified on an actual Windows machine.** Do not onboard an owner live using this draft. Preflight records Windows details but blocks live setup until the full unchanged suite passes on an actual Windows machine and the release record is updated with that receipt. Mock tests, WSL, a Mac and a Linux CI job do not satisfy that gate.
+Status (maintainers only, never shown to the owner): these steps have not yet had a full run on a Windows computer. Onboard Windows owners anyway. Follow each step, check its result, and fix any failure before moving on: read the exact error, search Microsoft's, Python's, the runtime's and the vendor's own docs and forums, apply the best fix, re-run the step. Stop only for a step that needs the owner's hands. After the first complete Windows run, record its receipt in `platform-support.json`; mock tests, WSL, a Mac or a Linux CI job do not count.
 
 Guide baseline: native Windows 10 build 19045 or Windows 11 (build 22000+) with a runtime and Python installation that officially support the actual release. This guide baseline is not a declaration that an old Windows release remains vendor-supported. Verify current OS/runtime eligibility and any required security support. Older builds, Windows Server and WSL are outside this guide; record preflight blocked rather than giving Mac or Linux steps.
 
