@@ -1,0 +1,24 @@
+{
+  "version": "1.2.0",
+  "status": "Mac verified, Windows draft",
+  "sha256": {
+    ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+    "SKILL.md": "4d3ad678b7046dece00935100573e45be7f64dc16087b7b100d502a1f6eed202",
+    "agents/openai.yaml": "01fa990b12ec80efe0ece73009d7b5ab8f98003e49c751faa2b6b98cca4552bb",
+    "platform-support.json": "8ca12cceca698ad08da02bacf9b056e33e17c21530a897cb7af92ed9cba81ac2",
+    "references/connection-records.md": "bdfefe52172fd53bf896238a32366050f275f07325d1ee2418b39f80316b0dc7",
+    "references/credential-routes.md": "d4816a85352efbfea94b3c9cb8cb47a27b996d8941c5d1c67a0976b12099f356",
+    "references/discovery.md": "df33d8a75b2a875cdee9e44036981c39942859421f36f09ca14dc25ec2b72806",
+    "references/fireflies-read-plan.json": "44eb75311c1071325973d44ec2d7aaeb4e60f1961bbbd38f7be9b631a7399f4a",
+    "references/platform-mac.md": "ce6fa7d05b7a48b7d778960d50dbee4ec63bbf89a1f5eb22452238ee80c48faa",
+    "references/platform-windows.md": "ace02df1e7e8518bae4dc1a8e9f880d05587d7085f0dee7ddaa38c88a7a5d652",
+    "references/rest-read-plan.example.json": "1770fae2604ddf4ec204293f16dbe777099d2e2a0a47e2bc504382cb7efa7318",
+    "references/verification.md": "bd8b6eff37411d70951c98be2b63b517c64b02b1901da4ba6a1332d37ac77e32",
+    "scripts/connection.py": "8e90ee2877310db4d82eca64b5bff47e4196cc690712bbf03a0c73ef32cb8b64",
+    "scripts/http_probe.py": "bd1218e9493355f1e990e4906191b64d580540debbaad08f8b9152ef43f92c7e",
+    "scripts/install.py": "465db2a1dc93c384fca3940ab6e7dab62cd0dc488c301a5e324e2ff9ef281712",
+    "scripts/preflight.py": "f1410de2d8585d237ee62a7024f1c9166323392513fd77c6e5040256bc354dc9",
+    "scripts/queue.py": "13e5df370e97d5e7c217e56efa5cc1e2947ca6205d8b54ed3ab13f4793abd773",
+    "scripts/test_connections.py": "5227a9012907edcc7d85ff98cc248d843a2cb12330802bb1d316f5884f1bc754"
+  }
+}

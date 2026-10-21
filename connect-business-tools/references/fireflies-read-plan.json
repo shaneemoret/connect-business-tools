@@ -1,0 +1,14 @@
+{
+  "origin": "https://api.fireflies.ai",
+  "env_var": "FIREFLIES_API_KEY",
+  "auth": "bearer",
+  "read": [
+    {
+      "operation": "Fireflies account lookup",
+      "url": "https://api.fireflies.ai/graphql",
+      "method": "POST",
+      "json": {"query": "query { user { user_id } }"},
+      "expect_path": ["data", "user", "user_id"]
+    }
+  ]
+}

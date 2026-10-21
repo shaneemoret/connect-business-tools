@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "label": "Mac verified, Windows draft",
+  "mac": {
+    "status": "verified",
+    "guide_minimum_major": 13,
+    "verification": {
+      "os": "Darwin",
+      "os_version": "26.4.1",
+      "python_version": "3.14.7",
+      "passed": 19,
+      "failed": 0,
+      "suite_sha256": "5227a9012907edcc7d85ff98cc248d843a2cb12330802bb1d316f5884f1bc754",
+      "checked_at": "2026-10-21T00:14:20.209141+00:00"
+    }
+  },
+  "windows": {
+    "status": "draft",
+    "guide_minimum_build": 19045,
+    "verification": null,
+    "reason": "No complete suite run on an actual Windows machine has been recorded. Simulation or Linux is not Windows proof."
+  }
+}

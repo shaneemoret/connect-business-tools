@@ -1,0 +1,14 @@
+{
+  "origin": "https://api.vendor.example",
+  "env_var": "VENDOR_API_KEY",
+  "auth": "header",
+  "header_name": "X-API-Key",
+  "read": [
+    {
+      "operation": "Account lookup",
+      "url": "https://api.vendor.example/v1/account",
+      "method": "GET",
+      "expect_path": ["id"]
+    }
+  ]
+}

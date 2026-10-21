@@ -1,0 +1,6 @@
+interface:
+  display_name: "Connect My Business Tools"
+  short_description: "Discover, connect, test, and retain secure API access"
+  default_prompt: "Use $connect-business-tools to check my computer, discover connections from Gmail or Outlook, and do the setup through my password manager one tool at a time, asking me only for sign-ins and approvals."
+policy:
+  allow_implicit_invocation: true
