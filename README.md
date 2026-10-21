@@ -23,6 +23,7 @@ Install the connect-business-tools skill from https://github.com/shaneemoret/con
 - You sign in and click Create and Copy yourself. A key never goes in the chat, a file or a command.
 - Each key goes into the password vault already on your computer (Keychain on a Mac, Credential Manager on Windows, or the manager you already use).
 - It tests each key by reading, never by changing your business data.
+- It never connects LinkedIn, by key, plugin, browser or any other route. Automating LinkedIn can get your account suspended or banned.
 
 ## What's inside
 

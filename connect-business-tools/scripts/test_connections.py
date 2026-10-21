@@ -165,6 +165,16 @@ class Fixture(unittest.TestCase):
         v['items'].append(dict(v['items'][0],service='another-tool'));c.atomic_json(path,v)
         with self.assertRaises(c.ConnectionError):q.check(path)
 
+    def test_excluded_service_cannot_enter_any_owners_queue(self):
+        path=self.p.parent/'queue.json'
+        for source in ('gmail','outlook'):
+            for service in ('linkedin','linked-in','linkedin-marketing'):
+                v=self.queue();v['mail_source']=source
+                v['items'][0].update(service=service,owner_approved=True,status='approved')
+                c.atomic_json(path,v)
+                with self.assertRaises(c.ConnectionError):q.check(path)
+        c.atomic_json(path,self.queue());q.check(path)
+
     def test_queue_connected_needs_matching_fresh_receipt(self):
         path=self.p.parent/'queue.json';v=self.queue();v['items'][0].update(status='connected',owner_approved=True,receipt='sample-tool.receipt.json');c.atomic_json(path,v)
         with self.assertRaises(c.ConnectionError):q.check(path)

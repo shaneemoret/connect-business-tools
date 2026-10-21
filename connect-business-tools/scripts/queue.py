@@ -96,6 +96,8 @@ def check(path):
         slug = item['service']
         if not isinstance(slug, str) or not re.fullmatch(r'[a-z][a-z0-9-]{0,62}', slug) or slug in seen:
             fail('Invalid/duplicate service in queue.')
+        if slug.replace('-', '').startswith('linkedin'):
+            fail('This service is excluded from this skill for every owner; remove it from the queue.')
         seen.add(slug)
         if item['basis'] not in {'observed','proposed'} or item['confidence'] not in {'low','medium','high'} or item['status'] not in states or type(item['owner_approved']) is not bool:
             fail('Invalid queue classification/state.')

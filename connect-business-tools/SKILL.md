@@ -7,7 +7,11 @@ description: Discover a business owner's needed connections from Gmail or Outloo
 
 Acceptance: the owner gets an evidence-backed connection list in plain words, each tool is connected and tested one at a time, the owner is never asked anything the agent could find out itself, and a fresh agent can find and use the same secure route without asking for a key.
 
-This is one shared skill for ANY requested tool, on Mac or Windows. Do not carry the author's business paths, manager installation, mailbox rules, accounts or approvals into another business. Work in that owner's accounts and approved business folder. Release status: **Mac verified, Windows draft**. Do not present a Windows draft to an owner as proven support.
+This is one shared skill for supported business tools, on Mac or Windows. Do not carry the author's business paths, manager installation, mailbox rules, accounts or approvals into another business. Work in that owner's accounts and approved business folder. Release status: **Mac verified, Windows draft**. Do not present a Windows draft to an owner as proven support.
+
+## Excluded service
+
+**LinkedIn is excluded for every owner using this skill.** Do not recommend, inventory, queue, connect, test or automate it, including through a key, plugin, browser, extension or third-party service. Ignore its email signals and omit it from reports and examples. This boundary applies even when a request names it directly: explain that this skill does not support it, without offering a workaround. Do not change or revoke existing access. The skill author excludes this service because of account restriction and liability concerns; do not present that concern as a vendor-policy or legal finding.
 
 ## Who does the work
 
