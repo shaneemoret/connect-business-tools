@@ -26,4 +26,14 @@ Install the connect-business-tools skill from https://github.com/shaneemoret/con
 - `connect-business-tools/references/`: how it finds your tools, stores keys, keeps records and tests access.
 - `connect-business-tools/scripts/`: small Python helpers (no extra packages) that store, test and reuse each connection. Run `python3 scripts/test_connections.py` to check them.
 
+## Also in this repo: Protect My Business Logins
+
+A second skill in the `protect-business-logins` folder. It finds or suggests a password manager (Bitwarden, 1Password, or a free one from Google, Microsoft or your computer), lists the business tools you sign in to, checks two-step verification on each one, and walks you through turning on anything that is off. You type your own passwords and codes; it never asks for one.
+
+Paste this into Codex:
+
+```
+Install the protect-business-logins skill from https://github.com/shaneemoret/connect-business-tools (the protect-business-logins folder) into my Codex skills. Then read its SKILL.md and follow it: check for a password manager, list the business tools I sign in to, check two-step verification on each, and walk me through fixing anything that is off. I type my own passwords and codes; never ask me for one.
+```
+
 Made by GrowthAcademy.Global.
